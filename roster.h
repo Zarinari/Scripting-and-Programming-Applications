@@ -12,9 +12,9 @@ public:
         string sLast, 
         string sEmail,
         int sAge,
-        int sDays1,
-        int sDays2,
-        int sDays3,
+        int sdays1,
+        int sdays2,
+        int sdays3,
         DegreeProgram dp);
     void remove(string studentID);
     void printAll();
@@ -22,4 +22,5 @@ public:
     void printInvalidEmails();
     void printByDegreeProgram(DegreeProgram degreeProgram);
     ~Roster();
+    
 };
