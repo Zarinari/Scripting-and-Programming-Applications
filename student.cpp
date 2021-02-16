@@ -20,7 +20,7 @@ Student::Student(string studentID, string firstName, string lastName, string ema
     this->degreeProgram = degreeProgram;
 }
 
-Student::~Student() {};
+Student::~Student() {}
 
 //accessors
 string Student::getID() { return this->studentID; }
@@ -37,7 +37,9 @@ void Student::setFirst(string first) { this->firstName = first; }
 void Student::setLast(string last) { this->lastName = last; }
 void Student::setEmail(string email) { this->emailAddress = email; }
 void Student::setAge(int age) { this->studentAge = age; }
-void Student::setDays(int days[]) { for (int i = 0; i < daysArraySize; i++) this->daysInCourse[i] = days[i]; }
+void Student::setDays(int days[]) { 
+    for (int i = 0; i < daysArraySize; i++) this->daysInCourse[i] = days[i]; 
+}
 void Student::setDegree(DegreeProgram dp) { this->degreeProgram = dp; }
 
 void Student::print() {
@@ -49,4 +51,5 @@ void Student::print() {
     std::cout << this->getDays()[1] << ", ";
     std::cout << this->getDays()[2] << "}" << '\t';
     std::cout << "Degree Program: " << degreeProgramStrings[this->getDegree()] << "\n";
+    
 }
