@@ -10,6 +10,7 @@ int main() {
         "A4,Erin,Black,Erin.black@comcast.net,22,50,58,40,SECURITY",
         "A5,Hannah,Sullivant,hsull24@wgu.edu,23,45,30,60,SOFTWARE"
     };
+    
     const int numStudents = 5;
     Roster classRoster;
     
@@ -38,3 +39,8 @@ int main() {
     cout << "Removing student A3: " << std::endl;
     classRoster.remove("A3");
     cout << std::endl;
+    
+    system("pause");
+    
+    return 0;
+}
